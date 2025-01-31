@@ -216,6 +216,12 @@ app.delete('/suppliers/:supplierId', async (req, res) => {
 });
 
 
+app.get('/orders', async (req, res) => {
+    const order = await db('orders').select('*');
+    res.status(200).json(order);
+});
+
+
 app.listen(8080, () => {
     console.log('El backend ha iniciado en el puerto 8080');
 });
