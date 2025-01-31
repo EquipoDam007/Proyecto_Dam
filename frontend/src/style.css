@@ -1,19 +1,24 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #beb9b9;
+}
+
+.centered-content {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #beb9b9;
-}
-
-.login-container {
-    background-color:white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-}
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+  }
 
 .h2 {
     text-align: center;
