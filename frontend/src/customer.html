@@ -23,5 +23,25 @@
             </tbody>
         </table>
     </div>
+
+    <form id="formularioCustomer" style="display: none;">
+        <label for="idNew">ID:</label>
+        <input type="text" id="idNew" name="idNew" readonly>
+    
+        <label for="nameNew">Nombre:</label>
+        <input type="text" id="nameNew" name="nameNew" required>
+    
+        <label for="emailNew">Correo Electrónico:</label>
+        <input type="email" id="emailNew" name="emailNew" required>
+    
+        <label for="phoneNew">Teléfono:</label>
+        <input type="tel" id="phoneNew" name="phoneNew" required>
+    
+        <label for="addressNew">Dirección:</label>
+        <textarea id="addressNew" name="addressNew" required></textarea>
+    
+        <button type="submit" onclick="updateCustomer()">Save</button>
+    </form>
+    
 </body>
 </html>
