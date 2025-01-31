@@ -16,11 +16,19 @@
     </div>
         <!-- Barra de navegación -->
         <nav class="nav">
+
+            <ul>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="customer.html">Customers</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+                <li><a href="orders.html">Orders</a></li>
+
             <ul id="nav-links">
                 <li><a href="Producto">Products</a></li>
                 <li><a href="Clientes">Customers</a></li>
                 <li><a href="Proveedores">Suppliers</a></li>
                 <li><a href="Pedidos">Orders</a></li>
+
             </ul>
         </nav>
     </header>
@@ -44,6 +52,30 @@
         </table>
     </div>
 
+
+
+    <!-- Formulario que mostrará los datos cuando queramos actualizar. Mientras no pulsemos el botón de actualizar no aparecerá, y se cargará con los datos del producto que queremos modificar -->
+    
+    <form id="formularioProduct" style="display: none;">
+        <label for="idNew">ID:</label>
+        <input type="text" id="idNew" name="idNew" readonly>
+    
+        <label for="nameNew">Name:</label>
+        <input type="text" id="nameNew" name="nameNew">
+    
+        <label for="descriptionNew">Description:</label>
+        <textarea id="descriptionNew" name="descriptionNew"></textarea>
+    
+        <label for="priceNew">Price:</label>
+        <input type="number" id="priceNew" name="priceNew">
+    
+        <label for="stockNew">Stock:</label>
+        <input type="number" id="stockNew" name="stockNew">
+    
+        <button type="submit" onclick="updateProduct()">Save</button>
+    </form>
+
+
     <footer>
         <p>&copy; 2025 Ecommerce "Proyecto DAM equipo7". Todos los derechos reservados.</p>
     </footer>
@@ -53,5 +85,6 @@
             navLinks.classList.toggle("show");
         }
     </script>
+
 </body>
 </html>
