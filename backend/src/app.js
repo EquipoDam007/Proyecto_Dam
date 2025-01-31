@@ -25,18 +25,18 @@ app.get('/products', async (req, res) => {
     res.status(200).json(product);
 });
 
-app.get('/products/:productsId', async (req, res) => {
-    const obra = await db('products').select('*').where({ id: req.params.productsId }).first();
-    res.status(200).json(obra);
+app.get('/products/:productId', async (req, res) => {
+    const product = await db('products').select('*').where({ id_product: req.params.productId }).first();
+    res.status(200).json(product);
 });
 
 
 
 app.post('/products', [
-    body('nombre').isString().isLength({ min: 3 }).withMessage('El nombre debe tener al menos 3 caracteres'),
-    body('autor').isString().withMessage('El autor debe ser una cadena de texto'),
-    body('año').isInt({ min: 1000, max: new Date().getFullYear() }).withMessage('El año debe ser un número válido'),
-    body('estilo').optional().isString().withMessage('El estilo debe ser una cadena de texto'),
+    body('name').isString().isLength({ min: 3 }).withMessage('El nombre debe tener al menos 3 caracteres'),
+    body('description').isString().withMessage('Debe ser una cadena de texto'),
+    body('price').isInt({ min: 0, max: 100000 }).withMessage('El precio debe ser un número válido'),
+    body('stock').isInt({ min: 0, max: 100000 }).withMessage('El stock debe ser un número válido'),
 ], async (req, res) => {
     // Validar errores
     const errors = validationResult(req);
@@ -44,15 +44,15 @@ app.post('/products', [
         return res.status(400).json({ errors: errors.array() });
     }
         // Insertar datos si pasan la validación
-        await db('obras').insert({
-            nombre: req.body.nombre,
-            autor: req.body.autor,
-            año: req.body.año,
-            estilo: req.body.estilo
+        await db('products').insert({
+            name: req.body.name,
+            description: req.body.autor,
+            price: req.body.price,
+            stock: req.body.stock
         });
     
     
-        res.status(201).json({ message: 'Obra registrada correctamente' });
+        res.status(201).json({ message: 'Producto registrado correctamente' });
 });
     
 app.listen(8080, () => {
