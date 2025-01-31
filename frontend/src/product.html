@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CUSTOMERS</title>
+    <title>Products</title>
     <script src="./products.js" type="module"></script>
 </head>
 <body onload="readProducts()">
+<!-- Header -->
     <header>
+        <!-- Botón de menú hamburguesa -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+        <!-- Barra de navegación -->
         <nav class="nav">
+
             <ul>
                 <li><a href="product.html">Products</a></li>
                 <li><a href="customer.html">Customers</a></li>
                 <li><a href="suppliers.html">Suppliers</a></li>
                 <li><a href="orders.html">Orders</a></li>
+
+            <ul id="nav-links">
+                <li><a href="Producto">Products</a></li>
+                <li><a href="Clientes">Customers</a></li>
+                <li><a href="Proveedores">Suppliers</a></li>
+                <li><a href="Pedidos">Orders</a></li>
+
             </ul>
         </nav>
     </header>
@@ -39,6 +53,7 @@
     </div>
 
 
+
     <!-- Formulario que mostrará los datos cuando queramos actualizar. Mientras no pulsemos el botón de actualizar no aparecerá, y se cargará con los datos del producto que queremos modificar -->
     
     <form id="formularioProduct" style="display: none;">
@@ -59,6 +74,17 @@
     
         <button type="submit" onclick="updateProduct()">Save</button>
     </form>
+
+
+    <footer>
+        <p>&copy; 2025 Ecommerce "Proyecto DAM equipo7". Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            let navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 
 </body>
 </html>
