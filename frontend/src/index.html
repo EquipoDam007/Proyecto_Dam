@@ -7,22 +7,23 @@
     <title>ProyectoDam</title>
     <script src="./index.js" type="module"></script>
 </head>
-<body class="body">
-    <h1></h1>
-<div class="login-container">
-    <h2 class="h2">Login</h2>
-    <form>
-        <div class="input-container">
-            <label for="username" class="label">Username</label>
-            <input type="text" id="username" class="input" required>
+<body>
+    <div class="centered-content">
+        <div class="login-container">
+            <h2 class="h2">Login</h2>
+            <form>
+                <div class="input-container">
+                    <label for="username" class="label">Username</label>
+                    <input type="text" id="username" class="input" required>
+                </div>
+                <div class="input-container">
+                    <label for="password" class="label">Password</label>
+                    <input type="password" id="password" name="password" class="input" required>
+                </div>
+                <button type="button" onclick="login()" class="btn">Entrar</button>
+            </form>
         </div>
-        <div class="input-container">
-            <label for="password" class="label">Password</label>
-            <input type="password" id="password" name="password" class="input" required>
-        </div>
-        <button type="button" onclick="login()" class="btn">Entrar</button>
-    </form>
-</div>
+    </div>
 
 </body>
 </html>
