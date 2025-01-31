@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CUSTOMERS</title>
+    <title>Products</title>
     <script src="./products.js" type="module"></script>
 </head>
 <body onload="readProducts()">
+<!-- Header -->
     <header>
+        <!-- Botón de menú hamburguesa -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+        <!-- Barra de navegación -->
         <nav class="nav">
-            <ul>
+            <ul id="nav-links">
                 <li><a href="Producto">Products</a></li>
                 <li><a href="Clientes">Customers</a></li>
                 <li><a href="Proveedores">Suppliers</a></li>
@@ -38,6 +44,14 @@
         </table>
     </div>
 
-  
+    <footer>
+        <p>&copy; 2025 Ecommerce "Proyecto DAM equipo7". Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            let navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
