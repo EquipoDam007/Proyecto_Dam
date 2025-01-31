@@ -5,7 +5,7 @@
     "type": "module",
 
     "scripts": {
-        "start": "parcel src/index.html --no-cache",
+        "start": "parcel src/index.html src/product.html --no-cache",
         "build": "parcel build"
     },
     "devDependencies": {
