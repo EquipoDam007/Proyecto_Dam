@@ -91,7 +91,7 @@ input:focus {
     border-color: #007bff;
     outline: none;
 }
-.btn {
+.btn-login {
     width: 100%;
     padding: 12px;
     font-size: 16px;
@@ -124,6 +124,16 @@ input:focus {
 .table th {
     background: #4682B4;
     color: white;
+}
+.btn-form {
+    width: 20%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Footer */
