@@ -11,7 +11,7 @@ window.readSuppliers = function () {
             suppliersTable.innerHTML='';
             suppliersList.forEach(supplier => {
             const row = document.createElement('tr');
-            row.id = 'suppliers -' + supplier.id;
+            row.id = 'suppliers-' + supplier.id;
             row.innerHTML = '<td>' + supplier.name + '</td>' +
                             '<td>' + supplier.contact + '</td>' +
                             '<td>' + supplier.phone + '</td>' +
@@ -56,7 +56,7 @@ window.removeSuppliers = function (id) {
     axios.delete('http://localhost:8080/suppliers/' + id)
         .then((response) => {
             if (response.status == 204) {
-                document.getElementById('suppliers -' + id).remove();
+                document.getElementById('suppliers-' + id).remove();
                 notifyOk('Supplier deleted');
             }
         })

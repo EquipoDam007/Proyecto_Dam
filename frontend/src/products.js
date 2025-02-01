@@ -60,6 +60,7 @@ window.removeProducts = function (id) {
             if (response.status == 204) {
                 document.getElementById('product-' + id).remove();
                 notifyOk('Product deleted');
+                readProducts();
             }
         })
         .catch ((error) =>{
@@ -106,3 +107,17 @@ window.datosProduct = function (id, name, description, price, stock) {
 
     document.getElementById('formularioProduct').style.display = 'block';
 }
+
+//muestra formulario vacio para introducir datos
+
+window.showFormulario = function () {
+    
+        document.getElementById('name').value = '';
+        document.getElementById('description').value = '';
+        document.getElementById('price').value = '';
+        document.getElementById('stock').value = '';
+
+        document.getElementById('formularioNewProduct').style.display = 'block';
+    };
+
+    
