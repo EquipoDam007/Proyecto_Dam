@@ -205,7 +205,7 @@ app.put('/suppliers/:supplierId', [
         contact: req.body.contact,
         phone: req.body.phone,
         address: req.body.address
-    }).where({ id_supplier: req.params.suplierId });
+    }).where({ id_supplier: req.params.supplierId });
 
     res.status(204).json({});
 });

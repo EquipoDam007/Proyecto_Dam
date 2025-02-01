@@ -7,19 +7,21 @@
     <script type="module" src="./customer.js"></script>
 </head>
 <body onload="readCustomers()">
-    <div class="container mt-5 shadow p3 mb-5 bg-gody rounded">
-        <table class="table table-hover">
-            <caption>Lista de obras</caption>
+    <div class="container mt-4">
+        <h1>Lista de Productos</h1>
+        <!-- Tabla donde se mostrarán los clientes -->
+        <table class="table table-striped">
             <thead>
-                <tr class="fs-5">
-                    <th>OBRA</th>
-                    <th>AUTOR</th>
-                    <th>AÑO</th>
-                    <th>ESTILO</th>
-                    <th></th>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody id="tableBody">
+                <!-- Aquí se agregarán las filas de productos dinámicamente -->
             </tbody>
         </table>
     </div>
