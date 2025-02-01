@@ -16,8 +16,8 @@ window.readCustomers = function () {
                             '<td>' + customer.email + '</td>' +
                             '<td>' + customer.phone + '</td>' +
                             '<td>' + customer.address + '</td>'+
-                            '<td class="text-center"><button type="button" class="btn" onclick="datosCustomer('+ '\'' + customer.id + '\'' + ', ' + '\'' + customer.name + '\'' + ', ' + '\'' + customer.email +'\''+ ', ' + '\''+ customer.phone + '\'' + ', ' + '\'' + customer.address + '\'' +')">Update</button><span> </span>' +
-                            '<button type="button" class="btn" onclick="removeCustomers(' + customer.id + ')">Delete</button><span> </span>';
+                            '<td class="text-center"><button type="button" class="btn-form" onclick="datosCustomer('+ '\'' + customer.id + '\'' + ', ' + '\'' + customer.name + '\'' + ', ' + '\'' + customer.email +'\''+ ', ' + '\''+ customer.phone + '\'' + ', ' + '\'' + customer.address + '\'' +')">Update</button><span> </span>' +
+                            '<button type="button" class="btn-form" onclick="removeCustomers(' + customer.id + ')">Delete</button><span> </span>';
             customersTable.appendChild(row);
         })       
     });

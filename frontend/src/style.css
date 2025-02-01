@@ -135,10 +135,20 @@ input:focus {
     border-radius: 4px;
     cursor: pointer;
 }
+.btn-add {
+    width: 5%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 /* Footer */
 footer {
-    
+    position: fixed;
     bottom: 0;
     width: 100%;
     background: #1a1a1a;

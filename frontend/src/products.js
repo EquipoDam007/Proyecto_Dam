@@ -17,8 +17,8 @@ window.readProducts = function () {
                             '<td>' + product.description + '</td>' +
                             '<td>' + product.price + '</td>' +
                             '<td>' + product.stock + '</td>'+
-                            '<td class="text-center"><button type="button" class="btn btn-success btn-sm ' + '" onclick="datosProduct('+ '\'' + product.id + '\'' + ', ' + '\'' + product.name + '\'' + ', ' + '\'' + product.description +'\''+ ', ' + '\''+ product.price + '\'' + ', ' + '\'' + product.stock + '\'' +')">Update</button><span> </span>' +
-                            '<button type="button" class="btn btn-danger btn-sm ' + '" onclick="removeProducts(' + product.id + ')">Delete</button><span> </span>';
+                            '<td class="text-center"><button type="button" class="btn-form' + '" onclick="datosProduct('+ '\'' + product.id + '\'' + ', ' + '\'' + product.name + '\'' + ', ' + '\'' + product.description +'\''+ ', ' + '\''+ product.price + '\'' + ', ' + '\'' + product.stock + '\'' +')">Update</button><span> </span>' +
+                            '<button type="button" class="btn-form ' + '" onclick="removeProducts(' + product.id + ')">Delete</button><span> </span>';
             productTable.appendChild(row);
         })       
     });
