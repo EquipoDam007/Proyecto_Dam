@@ -18,6 +18,11 @@ Este proyecto desarrolla un aplicativo web de una tienda. Nos mostrará 4 págin
 * Se ha utlizado la librería Tostify para mandar mensajes durante la validación si hay error o no.
 * Para la validación de la introducción de datos en el backend se ha utilizado express-validator.
 * El proyecto incluye una colección de consultas a la API en formato .JSON creada en Hoppscotch.
+* El aplicativo web tiene protegido su acceso con un login.  
+       ```username: usuario ```   
+       ```password: password ```
+
+
 ---     
 
 Para la inicialización de nuestro proyecto, tanto en el backend como en el frontend debemos instalar primeramente todas las dependencias necesarias en la consola con el comando :
