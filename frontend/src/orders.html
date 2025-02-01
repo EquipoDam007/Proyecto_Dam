@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="style.css">
     <script type="module" src="./orders.js"></script>
 </head>
 <body onload="readOrders()">
+    <!-- Header -->
+    <header>
+        <!-- Botón de menú hamburguesa -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+        <!-- Barra de navegación -->
+        <nav class="nav">
+
+            <ul id="nav-links">
+                <li><a href="product.html">Products</a></li>
+                <li><a href="customer.html">Customers</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+                <li><a href="orders.html">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- sección para mostrar el contenido web -->
     <div class="container mt-4">
-        <h1>Lista de Productos</h1>
+        <h1>List of orders</h1>
         <!-- Tabla donde se mostrarán los pedidos -->
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Descripción</th>
-                    <th>Precio</th>
-                    <th>Acciones</th>
+                    <th>ID Order</th>
+                    <th>Order date</th>
+                    <th>Total</th>
                 </tr>
             </thead>
             <tbody id="tableBody">
@@ -24,6 +42,18 @@
             </tbody>
         </table>
     </div>
-    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ecommerce “Proyecto DAM equipo7”. All rights reserved.</p>
+    </footer>
+
+    <!-- Script para el icono de hamburguesa -->
+    <script>
+        function toggleMenu() {
+            let navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
