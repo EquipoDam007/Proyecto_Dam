@@ -46,17 +46,21 @@
     </div>
 
     <form id="formularioCustomer" style="display: none;">
-        <label for="idNew">ID:</label>
-        <input type="text" id="idNew" name="idNew" readonly>
-    
-        <label for="nameNew">Name:</label>
-        <input type="text" id="nameNew" name="nameNew" required>
-    
-        <label for="emailNew">Email:</label>
-        <input type="email" id="emailNew" name="emailNew" required>
-    
-        <label for="phoneNew">Phone:</label>
-        <input type="tel" id="phoneNew" name="phoneNew" required>
+        
+            <label for="idNew">ID:</label>
+            <input type="text" id="idNew" name="idNew" readonly>
+        
+            <label for="nameNew">Name:</label>
+            <input type="text" id="nameNew" name="nameNew" required>
+  
+        
+            <label for="emailNew">Email:</label>
+            <input type="email" id="emailNew" name="emailNew" required>
+
+        
+            <label for="phoneNew">Phone:</label>
+            <input type="tel" id="phoneNew" name="phoneNew" required>
+
     
         <label for="addressNew">Address:</label>
         <textarea id="addressNew" name="addressNew" required></textarea>
@@ -65,26 +69,29 @@
     </form>
 
 
-    <div>
+    <div class="add-centered">
         <button class="btn-add" type="submit" onclick="showFormulario()">Add</button>
     </div>
     
 
     <form id="formularioNewCustomer" style="display: none;">
-    
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-    
-        <label for="email">Description:</label>
-        <textarea id="email" name="email"></textarea>
-    
-        <label for="phone">Price:</label>
-        <input type="phone" id="phone" name="phone">
-    
-        <label for="address">Stock:</label>
-        <input type="address" id="address" name="address">
-    
-        <button type="submit" onclick="insertCustomers()">Save</button>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Description:</label>
+            <textarea id="email" name="email"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="phone">Price:</label>
+            <input type="phone" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="address">Stock:</label>
+            <input type="address" id="address" name="address">
+        </div>
+            <button type="submit" onclick="insertCustomers()">Save</button>
     </form>
 
     <!-- Footer -->
