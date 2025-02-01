@@ -60,7 +60,6 @@ window.removeProducts = function (id) {
             if (response.status == 204) {
                 document.getElementById('product-' + id).remove();
                 notifyOk('Product deleted');
-                readProducts();
             }
         })
         .catch ((error) =>{
