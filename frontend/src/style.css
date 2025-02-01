@@ -215,13 +215,40 @@ footer {
     }
 }
 
-#formularioNewProduct  {
+#formularioSupplier{
     display: block;
     padding: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 400px;
-    margin: 0 auto 100px auto;
+    margin: 20px auto 100px auto;
+}
+
+#formularioCustomer{
+    display: block;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    margin: 20px auto 100px auto;
+}
+
+#formularioProduct {
+    display: block;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    margin: 20px auto 100px auto;
+}
+
+#formularioNewProduct {
+    display: block;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    margin: 0px auto 100px auto;
 }
 
 #formularioNewCustomer  {
