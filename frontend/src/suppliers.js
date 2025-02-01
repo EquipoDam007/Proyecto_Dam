@@ -104,3 +104,15 @@ window.datosSupplier = function (id, name, contact, phone, address) {
 
     document.getElementById('formularioSupplier').style.display = 'block';
 }
+
+//muestra formulario vacio para introducir datos
+
+window.showFormulario = function () {
+    
+    document.getElementById('name').value = '';
+    document.getElementById('contact').value = '';
+    document.getElementById('phone').value = '';
+    document.getElementById('address').value = '';
+
+    document.getElementById('formularioNewSupplier').style.display = 'block';
+};

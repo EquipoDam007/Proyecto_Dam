@@ -105,3 +105,15 @@ window.datosCustomer = function (id, name, email, phone, address) {
 
     document.getElementById('formularioCustomer').style.display = 'block';
 }
+
+//muestra formulario vacio para introducir datos
+
+window.showFormulario = function () {
+    
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('phone').value = '';
+    document.getElementById('address').value = '';
+
+    document.getElementById('formularioNewCustomer').style.display = 'block';
+};
