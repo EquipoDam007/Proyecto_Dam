@@ -46,21 +46,26 @@
     </div>
 
     <form id="formularioSupplier" style="display: none;">
-        <label for="idNew">ID:</label>
-        <input type="text" id="idNew" name="idNew" readonly>
-    
-        <label for="nameNew">Name:</label>
-        <input type="text" id="nameNew" name="nameNew" required>
-    
-        <label for="contactNew">Contact:</label>
-        <input type="text" id="contactNew" name="contactNew" required>
-    
-        <label for="phoneNew">Phone:</label>
-        <input type="tel" id="phoneNew" name="phoneNew" required>
-    
-        <label for="addressNew">Address:</label>
-        <textarea id="addressNew" name="addressNew" required></textarea>
-    
+        <div class="form-group">
+            <label for="idNew">ID:</label>
+            <input type="text" id="idNew" name="idNew" readonly>
+        </div>
+        <div class="form-group">
+            <label for="nameNew">Name:</label>
+            <input type="text" id="nameNew" name="nameNew" required>
+        </div>
+        <div class="form-group">
+            <label for="contactNew">Contact:</label>
+            <input type="text" id="contactNew" name="contactNew" required>
+        </div>
+        <div class="form-group">
+            <label for="phoneNew">Phone:</label>
+            <input type="tel" id="phoneNew" name="phoneNew" required>
+        </div>
+        <div class="form-group">    
+            <label for="addressNew">Address:</label>
+            <textarea id="addressNew" name="addressNew" required></textarea>
+        </div>
         <button type="submit" onclick="updateSupplier()">Save</button>
     </form>
     

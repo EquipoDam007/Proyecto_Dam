@@ -6,6 +6,9 @@
 
 # INTRODUCCIÓN
 
+
+
+
 Este proyecto desarrolla un aplicativo web de una tienda. Nos mostrará 4 páginas en las que podremos visualizar productos, pedidos, proveedores y clientes . Tendremos un CRUD completo de 3 de los elementos, productos, clientes y proveedores.
 
 * Se ha desarrollado con un backend como API que gestionará los datos y los almacenará en una base de datos MySQL que está almacenada en el servicio RDS de AWS.
@@ -42,6 +45,7 @@ Una vez inicializado nuestro frontend se estará ejecutando en el puerto 1234: (
 Los datos de conexión a nuestra base de datos son los siguientes: 
 
 ```
+
 user: admin
 pass: equipo07
 URL_: bbddproyectoequipo7.c3hokm7pd7o7.us-east-1.rds.amazonaws.com
