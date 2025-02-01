@@ -4,7 +4,7 @@
 
 
 
-# INFORMACION IMPORTANTE SOBRE LA BBDD
+# INTRODUCCIÓN
 
 Este proyecto desarrolla un aplicativo web de una tienda. Nos mostrará 4 páginas en las que podremos visualizar productos, pedidos, proveedores y clientes . Tendremos un CRUD completo de 3 de los elementos, productos, clientes y proveedores.
 
