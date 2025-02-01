@@ -1,4 +1,9 @@
-# Proyecto_Dam
+# Ecommerce Equipo7 ENERO
+
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+
+
+## Índice
 
 # INFORMACION IMPORTANTE SOBRE LA BBDD
 
