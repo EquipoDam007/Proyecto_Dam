@@ -85,7 +85,8 @@ window.updateCustomer = function (){
     })
         .then((response) => {
             if (response.status == 204) {
-                notifyOk( 'Customer updated');           
+                notifyOk( 'Customer updated');  
+                //document.getElementById('formularioCustomer').style.display = 'none';         
                 readCustomers();
             }
         })
@@ -95,7 +96,7 @@ window.updateCustomer = function (){
 };
 
 //muestra datos del producto para poder actualizar
-window.datosProduct = function (id, name, email, phone, address) { 
+window.datosCustomer = function (id, name, email, phone, address) { 
     document.getElementById('idNew').value = id;
     document.getElementById('nameNew').value = name;
     document.getElementById('emailNew').value = email;

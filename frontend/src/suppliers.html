@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./suppliers.js"></script>
+</head>
+<body onload="readSuppliers()">
+    <div class="container mt-4">
+        <h1>Lista de Productos</h1>
+        <!-- Tabla donde se mostrarán los provedores-->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Aquí se agregarán las filas de productos dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <form id="formularioSupplier" style="display: none;">
+        <label for="idNew">ID:</label>
+        <input type="text" id="idNew" name="idNew" readonly>
+    
+        <label for="nameNew">Nombre:</label>
+        <input type="text" id="nameNew" name="nameNew" required>
+    
+        <label for="contactNew">Correo Electrónico:</label>
+        <input type="text" id="contactNew" name="contactNew" required>
+    
+        <label for="phoneNew">Teléfono:</label>
+        <input type="tel" id="phoneNew" name="phoneNew" required>
+    
+        <label for="addressNew">Dirección:</label>
+        <textarea id="addressNew" name="addressNew" required></textarea>
+    
+        <button type="submit" onclick="updateSupplier()">Save</button>
+    </form>
+    
+</body>
+</html>

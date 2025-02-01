@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./orders.js"></script>
+</head>
+<body onload="readOrders()">
+    <div class="container mt-4">
+        <h1>Lista de Productos</h1>
+        <!-- Tabla donde se mostrarán los pedidos -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Aquí se agregarán las filas de productos dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
