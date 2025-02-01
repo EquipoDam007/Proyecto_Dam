@@ -146,6 +146,7 @@ input:focus {
 .btn-add {
     width: 5%;
     padding: 12px;
+    margin-bottom: 5%;
     font-size: 16px;
     color: #fff;
     background-color: #007bff;
@@ -156,7 +157,7 @@ input:focus {
 
 /* Footer */
 footer {
-    position: fixed;
+    
     bottom: 0;
     width: 100%;
     background: #1a1a1a;
@@ -216,29 +217,31 @@ footer {
 
 #formularioNewProduct  {
     display: block;
-    padding: 20px;
+    padding: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 400px;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
 }
 
 #formularioNewCustomer  {
     display: block;
-    padding: 20px;
+    padding: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 400px;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
+    
+
 }
 
 #formularioNewSupplier  {
     display: block;
-    padding: 20px;
+    padding: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 400px;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
 }
 
 .form-group {

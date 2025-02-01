@@ -13,7 +13,7 @@ window.readOrders = function () {
             const row = document.createElement('tr');
             row.id = 'orders -' + order.id;
             row.innerHTML = 
-                            
+                            '<td>' + order.id + '</td>' +
                             '<td>' + order.order_date + '</td>' +
                             '<td>' + order.total + '</td>';
             ordersTable.appendChild(row);
