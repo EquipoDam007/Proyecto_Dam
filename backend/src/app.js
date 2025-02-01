@@ -27,7 +27,7 @@ app.get('/products', async (req, res) => {
 
 // Consulta de TODOS los producto por ID 
 app.get('/products/:productId', async (req, res) => {
-    const product = await db('products').select('*').where({ id_product: req.params.productId }).first();
+    const product = await db('products').select('*').where({ id: req.params.productId }).first();
     res.status(200).json(product);
 });
 
@@ -54,7 +54,12 @@ app.post('/products', [
         res.status(201).json({ message: 'Producto registrado correctamente' });
 });
 
-
+app.delete('/products/:productId', async (req, res) => {
+    console.log(req.params.productId);
+    console.log(req.params);
+    await db('products').del().where({ id: req.params.productId });
+    res.status(204).json({});
+});
 
 // Añado la visualizacion de TODOS los clientes
 app.get('/customers', async (req, res) => {
@@ -64,7 +69,7 @@ app.get('/customers', async (req, res) => {
 
 // Visualizacion de cada cliente por ID 
 app.get('/customers/:customersId', async (req, res) => {
-    const clientId = await db('customers').select('*').where({ id_customer: req.params.customersId }).first();
+    const clientId = await db('customers').select('*').where({ id: req.params.customersId }).first();
     res.status(200).json(clientId);
 });
 
@@ -110,14 +115,14 @@ app.put('/customers/:customersId', [
             email: req.body.email,
             phone: req.body.phone,
             address: req.body.address
-    }).where({ id_customer: req.params.customersId });
+    }).where({ id: req.params.customersId });
 
     res.status(204).json({});
 });
 
 // Eliminar cliente por ID 
 app.delete('/customers/:customersId', async (req, res) => {
-    await db('customers').del().where({ id_customer: req.params.customersId });
+    await db('customers').del().where({ id: req.params.customersId });
     res.status(204).json({});
 });
 
@@ -141,13 +146,13 @@ app.put('/products/:productId', [
             description: req.body.description,
             price: req.body.price,
             stock: req.body.stock
-    }).where({ id_product: req.params.productId });
+    }).where({ id: req.params.productId });
 
     res.status(204).json({});
 });
 
 app.delete('/products/:productId', async (req, res) => {
-    await db('products').del().where({ id_product: req.params.productId });
+    await db('products').del().where({ id: req.params.productId });
     res.status(204).json({});
 });
 
@@ -159,7 +164,7 @@ app.get('/suppliers', async (req, res) => {
 });
 
 app.get('/suppliers/:supplierId', async (req, res) => {
-    const product = await db('suppliers').select('*').where({ id_supplier: req.params.supplierId }).first();
+    const product = await db('suppliers').select('*').where({ id: req.params.supplierId }).first();
     res.status(200).json(product);
 });
 
@@ -205,13 +210,13 @@ app.put('/suppliers/:supplierId', [
         contact: req.body.contact,
         phone: req.body.phone,
         address: req.body.address
-    }).where({ id_supplier: req.params.supplierId });
+    }).where({ id: req.params.supplierId });
 
     res.status(204).json({});
 });
 
 app.delete('/suppliers/:supplierId', async (req, res) => {
-    await db('suppliers').del().where({ id_supplier: req.params.supplierId });
+    await db('suppliers').del().where({ id: req.params.supplierId });
     res.status(204).json({});
 });
 

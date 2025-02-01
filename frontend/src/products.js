@@ -55,6 +55,7 @@ window.insertProducts = function () {
 
 //elimina producto
 window.removeProducts = function (id) { 
+    console.log(id);
     axios.delete('http://localhost:8080/products/' + id)
         .then((response) => {
             if (response.status == 204) {

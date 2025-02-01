@@ -12,7 +12,7 @@ window.readOrders = function () {
             ordersList.forEach(order => {
             const row = document.createElement('tr');
             row.id = 'orders -' + order.id;
-            row.innerHTML = '<td>' + order.customer_id + '</td>' +
+            row.innerHTML = 
                             
                             '<td>' + order.order_date + '</td>' +
                             '<td>' + order.total + '</td>';
