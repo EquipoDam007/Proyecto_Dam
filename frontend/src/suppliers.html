@@ -64,6 +64,28 @@
         <button type="submit" onclick="updateSupplier()">Save</button>
     </form>
     
+    <div>
+        <button class="btn-add" type="submit" onclick="showFormulario()">Add</button>
+    </div>
+    
+
+    <form id="formularioNewSupplier" style="display: none;">
+    
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+    
+        <label for="contact">Description:</label>
+        <textarea id="contact" name="contact"></textarea>
+    
+        <label for="phone">Price:</label>
+        <input type="phone" id="phone" name="phone">
+    
+        <label for="address">Stock:</label>
+        <input type="address" id="address" name="address">
+    
+        <button type="submit" onclick="insertSuppliers()">Save</button>
+    </form>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Ecommerce “Proyecto DAM equipo7”. All rights reserved.</p>

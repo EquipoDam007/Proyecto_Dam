@@ -187,7 +187,7 @@ app.post('/suppliers', [
             phone: req.body.phone,
             address: req.body.address
         });
-    
+        
         res.status(201).json({ message: 'Proovedor registrado correctamente' });
 });
     
