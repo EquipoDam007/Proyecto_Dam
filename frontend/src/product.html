@@ -75,7 +75,27 @@
         <button type="submit" onclick="updateProduct()">Save</button>
     </form>
 
+    <button type="submit" class="btn" onclick="showFormulario()">Add</button>
 
+
+    <form id="formularioNewProduct" style="display: none;">
+    
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+    
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+    
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price">
+    
+        <label for="stocNew">Stock:</label>
+        <input type="number" id="stock" name="stock">
+    
+        <button type="submit" onclick="insertProducts()">Save</button>
+    </form>
+
+    
     <footer>
         <p>&copy; 2025 Ecommerce "Proyecto DAM equipo7". Todos los derechos reservados.</p>
     </footer>
