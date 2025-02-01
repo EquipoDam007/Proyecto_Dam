@@ -13,7 +13,8 @@ Este proyecto desarrolla un aplicativo web de una tienda. Nos mostrará 4 págin
 * Dispone de un frontend desarrollado con HTML y Javascript que se comunica con el backend. 
 * Para la parte del diseño del frontend se ha utilizado solamente una hoja de estilos CSS sin ningún framework de diseño.
 * Se ha utlizado la librería Tostify para mandar mensajes durante la validación si hay error o no.
-* Para la validación de la introducción de datos en el backend se ha utilizado express-validator. 
+* Para la validación de la introducción de datos en el backend se ha utilizado express-validator.
+* El proyecto incluye una colección de consultas a la API en formato .JSON creada en Hoppscotch.
 ---     
 
 Para la inicialización de nuestro proyecto, tanto en el backend como en el frontend debemos instalar primeramente todas las dependencias necesarias en la consola con el comando :
