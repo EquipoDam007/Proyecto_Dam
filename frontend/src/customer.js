@@ -52,7 +52,7 @@ window.insertCustomers = function () {
 }
 
 //elimina cliente
-window.removeProducts = function (id) { 
+window.removeCustomers = function (id) { 
     axios.delete('http://localhost:8080/customers/' + id)
         .then((response) => {
             if (response.status == 204) {

@@ -164,7 +164,7 @@ app.get('/suppliers/:supplierId', async (req, res) => {
 });
 
 
-app.post('/supliers', [
+app.post('/suppliers', [
     body('name').isString().isLength({ min: 3 }).withMessage('El nombre debe tener al menos 3 caracteres'),
     body('contact').isString().withMessage('Debe ser una cadena de texto'),
     body('phone').isString().isLength({min:9}).withMessage('El número debe ser un número válido'),
@@ -176,7 +176,7 @@ app.post('/supliers', [
         return res.status(400).json({ errors: errors.array() });
     }
         // Insertar datos si pasan la validación
-        await db('supliers').insert({
+        await db('suppliers').insert({
             name: req.body.name,
             contact: req.body.contact,
             phone: req.body.phone,
@@ -211,7 +211,7 @@ app.put('/suppliers/:supplierId', [
 });
 
 app.delete('/suppliers/:supplierId', async (req, res) => {
-    await db('suppliers').del().where({ id_supplier: req.params.productId });
+    await db('suppliers').del().where({ id_supplier: req.params.supplierId });
     res.status(204).json({});
 });
 
