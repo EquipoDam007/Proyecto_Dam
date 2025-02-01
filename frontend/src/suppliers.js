@@ -16,8 +16,8 @@ window.readSuppliers = function () {
                             '<td>' + supplier.contact + '</td>' +
                             '<td>' + supplier.phone + '</td>' +
                             '<td>' + supplier.address + '</td>'+
-                            '<td class="text-center"><button type="button" class="btn" onclick="datosSupplier('+ '\'' + supplier.id + '\'' + ', ' + '\'' + supplier.name + '\'' + ', ' + '\'' + supplier.contact +'\''+ ', ' + '\''+ supplier.phone + '\'' + ', ' + '\'' + supplier.address + '\'' +')">Update</button><span> </span>' +
-                            '<button type="button" class="btn" onclick="removeSuppliers(' + supplier.id + ')">Delete</button><span> </span>';
+                            '<td class="text-center"><button type="button" class="btn-form" onclick="datosSupplier('+ '\'' + supplier.id + '\'' + ', ' + '\'' + supplier.name + '\'' + ', ' + '\'' + supplier.contact +'\''+ ', ' + '\''+ supplier.phone + '\'' + ', ' + '\'' + supplier.address + '\'' +')">Update</button><span> </span>' +
+                            '<button type="button" class="btn-form" onclick="removeSuppliers(' + supplier.id + ')">Delete</button><span> </span>';
             suppliersTable.appendChild(row);
         })       
     });
@@ -107,7 +107,7 @@ window.datosSupplier = function (id, name, contact, phone, address) {
 
 //muestra formulario vacio para introducir datos
 
-window.showFormulario = function () {
+window.showFormularioSupplier = function () {
     
     document.getElementById('name').value = '';
     document.getElementById('contact').value = '';
